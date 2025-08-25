@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const SuccessSection = styled.section`
-  background: #f8f9fa;
-  padding: 80px 0;
+  margin-bottom: 100px;
   text-align: center;
 `;
 
@@ -33,19 +32,20 @@ export const SectionHeader = styled.div`
 `;
 
 export const StatsFlex = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
 `;
 
 export const StatItem = styled.div`
   flex: 1;
+  max-width: 150px;
   
   h3 {
     font-size: 56px;
     line-height: 60px;
-    font-weight: 100;
+    font-weight: 300;
     background: linear-gradient(to right, #136CB5, #49BBBD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

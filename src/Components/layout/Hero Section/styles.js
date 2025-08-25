@@ -5,7 +5,7 @@ export const HeroContainer = styled.div`
     padding: 0 20px;
     border-bottom-left-radius: 80% 130px;
     border-bottom-right-radius: 80% 130px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     display: flex;
     align-items: center;
     gap: 145px;
