@@ -7,6 +7,7 @@ export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 30px;
 `;
 
 export const Logo = styled.img`
