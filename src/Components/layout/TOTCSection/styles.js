@@ -4,6 +4,7 @@ export const TotcSection = styled.section`
   text-align: center;
   padding: 0 20px;
   color: #333;
+  margin-bottom: 60px;
 `;
 
 export const TotcHeading = styled.h2`

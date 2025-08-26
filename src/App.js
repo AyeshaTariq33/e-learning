@@ -4,6 +4,7 @@ import HeroSection from './Components/layout/Hero Section';
 import AcievementsSection from './Components/layout/AchievementsSection';
 import FeaturesComponent from './Components/layout/Features';
 import WhatIsTotc from './Components/layout/TOTCSection';
+import ClassScope from './Components/layout/ClassScope';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AcievementsSection />
       <FeaturesComponent />
       <WhatIsTotc />
+      <ClassScope />
     </div>
   );
 }
