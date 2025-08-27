@@ -6,6 +6,7 @@ import FeaturesComponent from './Components/layout/Features';
 import WhatIsTotc from './Components/layout/TOTCSection';
 import ClassScope from './Components/layout/ClassScope';
 import OurFeatures from './Components/layout/OurFeatures';
+import Tools from './Components/layout/Tools';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <WhatIsTotc />
       <ClassScope />
       <OurFeatures />
+      <Tools />
     </div>
   );
 }
