@@ -1,4 +1,4 @@
-import react from "react";
+import React, { useState } from "react";
 import image from '../../images/Discussion/image.png';
 import { 
     Section,
@@ -9,7 +9,14 @@ import {
     Wrapper
 } from './styles';
 
-const Discussion = () => {
+const Discussion = ({
+    title = "One-on-One",
+    highlightText = "Discussions",
+    description = "Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.",
+    buttonText = "See more features"
+}) => {
+    const [isVisible, setIsVisible] = useState(true);
+
     return (
         <Section>
         <Container>
@@ -18,12 +25,12 @@ const Discussion = () => {
                     <img src={image} alt="call" />
                 </ImageWrapper>
                 <TextWrapper>
-                    <h2>One-on-One <span>Discussions</span></h2>
-                    <p>Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.</p>
+                    <h2>{title} <span>{highlightText}</span></h2>
+                    <p>{description}</p>
                 </TextWrapper>
             </Wrapper>
             <Button>
-                <p>See more features</p>
+                <p>{buttonText}</p>
             </Button>
         </Container>
     </Section>
@@ -31,6 +38,3 @@ const Discussion = () => {
 };  
 
 export default Discussion;
-                
-
-

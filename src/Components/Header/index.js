@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logoImage from '../../images/Navbar/Logo.svg'; 
 
 import {
@@ -11,29 +11,44 @@ import {
   SignUpButton
 } from './styles';
 
-const Header = () => {
+const Header = ({
+  homeText = "Home",
+  homeHref = "#home",
+  coursesText = "Courses",
+  coursesHref = "#courses",
+  careersText = "Careers",
+  careersHref = "#careers",
+  blogText = "Blog",
+  blogHref = "#blog",
+  aboutText = "About Us",
+  aboutHref = "#about",
+  loginButtonText = "Login",
+  signUpButtonText = "Sign Up"
+}) => {
+  const [isVisible, setIsVisible] = useState(true);
+
   return (
     <NavContainer>
         <Logo src={logoImage} alt="TOTC Logo" />
           <NavMenu>
               <NavItem>
-                <a href="#home">Home</a>
+                <a href={homeHref}>{homeText}</a>
               </NavItem>
               <NavItem>
-                <a href="#courses">Courses</a>
+                <a href={coursesHref}>{coursesText}</a>
               </NavItem>
               <NavItem>
-                <a href="#careers">Careers</a>
+                <a href={careersHref}>{careersText}</a>
               </NavItem>
               <NavItem>
-                <a href="#blog">Blog</a>
+                <a href={blogHref}>{blogText}</a>
               </NavItem>
               <NavItem>
-                <a href="#about">About Us</a>
+                <a href={aboutHref}>{aboutText}</a>
               </NavItem>
               <ButtonGroup>
-              <LoginButton>Login</LoginButton>
-              <SignUpButton>Sign Up</SignUpButton>
+              <LoginButton>{loginButtonText}</LoginButton>
+              <SignUpButton>{signUpButtonText}</SignUpButton>
           </ButtonGroup>
           </NavMenu>
     </NavContainer>

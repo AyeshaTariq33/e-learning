@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import billingIcon from '../../images/FeaturesSection/billing-icon.png';
 import schedulingIcon from '../../images/FeaturesSection/calender.png';
 import trackingIcon from '../../images/FeaturesSection/users.png';
@@ -13,19 +13,28 @@ import {
   FeatureContent
 } from './styles';
 
-const FeaturesComponent = () => {
+const FeaturesComponent = ({
+  mainTitle = "All-In-One",
+  highlightTitle = "Cloud Software.",
+  description = "TOTC is one powerful online software suite that combines all the tools needed to run a successful school or office.",
+  feature1Title = "Online Billing, Invoicing, & Contracts",
+  feature1Description = "Simple and secure control of your organization's financial and legal transactions. Send customized invoices and contracts",
+  feature2Title = "Easy Scheduling & Attendance Tracking",
+  feature2Description = "Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance",
+  feature3Title = "Customer Tracking",
+  feature3Description = "Automate and track emails to individuals or groups. Skilline's built-in system helps organize your organization"
+}) => {
+  const [isVisible, setIsVisible] = useState(true);
+
   return (
     <FeaturesSection>
       <Container>
         <SectionHeader>
           <h2>
-            <span className="all-in-one">All-In-One</span>{' '}
-            <span className="cloud-software">Cloud Software.</span>
+            <span className="all-in-one">{mainTitle}</span>{' '}
+            <span className="cloud-software">{highlightTitle}</span>
           </h2>
-          <p>
-            TOTC is one powerful online software suite that combines all the tools 
-            needed to run a successful school or office.
-          </p>
+          <p>{description}</p>
         </SectionHeader>
         
         <FeaturesFlex>
@@ -34,14 +43,8 @@ const FeaturesComponent = () => {
               <img src={billingIcon} alt="Billing Icon" />
             </IconWrapper>
             <FeatureContent>
-              <h3>
-                Online Billing,<br />
-                Invoicing, & Contracts
-              </h3>
-              <p>
-                Simple and secure control of your organization's financial and legal 
-                transactions. Send customized invoices and contracts
-              </p>
+              <h3>{feature1Title}</h3>
+              <p>{feature1Description}</p>
             </FeatureContent>
           </FeatureCard>
             
@@ -50,14 +53,8 @@ const FeaturesComponent = () => {
                 <img src={schedulingIcon} alt="Scheduling Icon" />
               </IconWrapper>
               <FeatureContent>
-                <h3>
-                  Easy Scheduling &<br />
-                  Attendance Tracking
-                </h3>
-                <p>
-                  Schedule and reserve classrooms at one campus or multiple campuses. 
-                  Keep detailed records of student attendance
-                </p>
+                <h3>{feature2Title}</h3>
+                <p>{feature2Description}</p>
               </FeatureContent>
           </FeatureCard>
             
@@ -66,11 +63,8 @@ const FeaturesComponent = () => {
                 <img src={trackingIcon} alt="Customer Tracking Icon" />
               </IconWrapper>
               <FeatureContent>
-                <h3>Customer Tracking</h3>
-                <p>
-                  Automate and track emails to individuals or groups. Skilline's 
-                  built-in system helps organize your organization
-                </p>
+                <h3>{feature3Title}</h3>
+                <p>{feature3Description}</p>
               </FeatureContent>
           </FeatureCard>
 

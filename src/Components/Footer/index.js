@@ -17,13 +17,25 @@ import {
   Copyright
 } from './styles';
 
-const Footer = () => {
+const Footer = ({
+  logoText1 = "Virtual Class",
+  logoText2 = "for Zoom",
+  newsletterTitle = "Subscribe to get our Newsletter",
+  emailPlaceholder = "Your Email",
+  subscribeButtonText = "Subscribe",
+  link1Text = "Careers",
+  link1Href = "/careers",
+  link2Text = "Privacy Policy",
+  link2Href = "/privacy",
+  link3Text = "Terms & Conditions",
+  link3Href = "/terms",
+  copyrightText = "© 2021 Class Technologies Inc."
+}) => {
   const [email, setEmail] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Subscribing email:', email);
-    // Handle newsletter subscription
     setEmail('');
   };
 
@@ -33,37 +45,37 @@ const Footer = () => {
         <LogoSection>
           <Logo src={logo} alt="TOTC Logo" />
           <LogoText>
-            <span>Virtual Class</span>
-            <span>for Zoom</span>
+            <span>{logoText1}</span>
+            <span>{logoText2}</span>
           </LogoText>
         </LogoSection>
 
         <NewsletterSection>
-          <NewsletterTitle>Subscribe to get our Newsletter</NewsletterTitle>
+          <NewsletterTitle>{newsletterTitle}</NewsletterTitle>
           <EmailForm onSubmit={handleSubmit}>
             <EmailInput
               type="email"
-              placeholder="Your Email"
+              placeholder={emailPlaceholder}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
             <SubscribeButton type="submit">
-              Subscribe
+              {subscribeButtonText}
             </SubscribeButton>
           </EmailForm>
         </NewsletterSection>
 
         <LinksSection>
           <FooterLinks>
-            <FooterLink href="/careers">Careers</FooterLink>
-            <FooterLink href="/privacy">Privacy Policy</FooterLink>
-            <FooterLink href="/terms">Terms & Conditions</FooterLink>
+            <FooterLink href={link1Href}>{link1Text}</FooterLink>
+            <FooterLink href={link2Href}>{link2Text}</FooterLink>
+            <FooterLink href={link3Href}>{link3Text}</FooterLink>
           </FooterLinks>
         </LinksSection>
 
         <Copyright>
-          © 2021 Class Technologies Inc.
+          {copyrightText}
         </Copyright>
       </Container>
     </FooterSection>

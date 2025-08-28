@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   ClassScopeSection, 
   ScopeContent, 
@@ -18,15 +18,21 @@ import greenCircle from '../../images/ClassScope/GreenCircle.png';
 import greenShape from '../../images/ClassScope/GreenShape.png';
 import playButton from '../../images/ClassScope/play-button.png';
 
+const ClassScope = ({
+  normalText = "Everything you can do in a physical classroom, ",
+  highlightText = "you can do with TOTC",
+  description = "TOTC's school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.",
+  linkText = "Learn More"
+}) => {
+  const [isVisible, setIsVisible] = useState(true);
 
-const ClassScope = () => {
   return (
     <ClassScopeSection>
         <ScopeContent>
             <ScopeText>
-                <h2><span className='normal-class'>Everything you can do in a physical classroom, </span><span className='totc-class'>you can do with TOTC</span></h2>
-                <p>TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
-                <a>Learn More</a>
+                <h2><span className='normal-class'>{normalText}</span><span className='totc-class'>{highlightText}</span></h2>
+                <p>{description}</p>
+                <a>{linkText}</a>
             </ScopeText>
             <GreenCircleBig>
                 <img src={greenCircle} alt="Green Circle" className='green-circle'/>
