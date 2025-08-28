@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import { 
     Section,
     Container,
-    ContentWrapper,
     LeftContent,
     RightContent,
     Badge,
     Title,
     Description,
     AssessmentText,
-    WriteButton,
+    Button,
     ArrowIcon,
     ImageWrapper,
     TestimonialCard,
@@ -18,8 +17,12 @@ import {
     RatingWrapper,
     Star,
     ReviewCount,
-    NavigationButton
+    NavigationButton,
+    Flag,
+    Wrapper
 } from './styles';
+
+import student from '../../images/Testimonials/student.png';
 
 const Testimonial = () => {
     const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -31,54 +34,57 @@ const Testimonial = () => {
             rating: 5,
             reviews: "12 reviews at Yelp"
         }
-        // Add more testimonials here
     ];
 
     return (
         <Section>
             <Container>
-                <ContentWrapper>
-                    <LeftContent>
-                        <Badge>TESTIMONIAL</Badge>
-                        <Title>What They Say?</Title>
-                        <Description>
-                            TOTC has got more than 100k positive ratings from our users around the world.
-                        </Description>
-                        <Description>
-                            Some of the students and teachers were greatly helped by the Skilline.
-                        </Description>
-                        <AssessmentText>
-                            Are you too? Please give your assessment
-                        </AssessmentText>
-                        <WriteButton>
-                            <span>Write your assessment</span>
-                            <ArrowIcon>→</ArrowIcon>
-                        </WriteButton>
-                    </LeftContent>
-                    
-                    <RightContent>
-                        <ImageWrapper>
-                            <img src="/api/placeholder/400/500" alt="Student with books" />
-                        </ImageWrapper>
-                        <TestimonialCard>
-                            <TestimonialText>
-                                "{testimonials[currentTestimonial].text}"
-                            </TestimonialText>
+                <LeftContent>
+                    <Badge>TESTIMONIAL</Badge>
+                    <Title>What They Say?</Title>
+                    <Description>
+                        TOTC has got more than 100k positive ratings from our users around the world.
+                    </Description>
+                    <Description>
+                        Some of the students and teachers were greatly helped by the Skilline.
+                    </Description>
+                    <AssessmentText>
+                        Are you too? Please give your assessment
+                    </AssessmentText>
+                    <Button>
+                        <span>Write your assessment</span>
+                        <ArrowIcon>
+                            →
+                        </ArrowIcon>
+                    </Button>
+                </LeftContent>
+                
+                <RightContent>
+                    <ImageWrapper>
+                        <img src={student} alt="Student with books" />
+                    </ImageWrapper>
+                    <TestimonialCard>
+                        <TestimonialText>
+                            "{testimonials[currentTestimonial].text}"
+                        </TestimonialText>
+                        <Wrapper>
                             <AuthorName>{testimonials[currentTestimonial].author}</AuthorName>
-                            <RatingWrapper>
-                                {[...Array(5)].map((_, i) => (
-                                    <Star key={i} filled={i < testimonials[currentTestimonial].rating}>
-                                        ★
-                                    </Star>
-                                ))}
-                                <ReviewCount>{testimonials[currentTestimonial].reviews}</ReviewCount>
-                            </RatingWrapper>
-                        </TestimonialCard>
-                        <NavigationButton>
-                            ❯
-                        </NavigationButton>
-                    </RightContent>
-                </ContentWrapper>
+                            <Flag>
+                                <RatingWrapper>
+                                    {[...Array(5)].map((_, i) => (
+                                        <Star key={i} filled={i < testimonials[currentTestimonial].rating}>
+                                            ★
+                                        </Star>
+                                    ))}
+                                    <ReviewCount>{testimonials[currentTestimonial].reviews}</ReviewCount>
+                                </RatingWrapper>
+                            </Flag>
+                        </Wrapper>
+                    </TestimonialCard>
+                    <NavigationButton>
+                        ❯
+                    </NavigationButton>
+                </RightContent>
             </Container>
         </Section>
     );

@@ -11,6 +11,7 @@ import Evaluation from './Components/Evaluation';
 import ClassManagement from './Components/ClassManagement';
 import Discussion from './Components/Discussion';
 import Testimonial from './Components/Testimonials';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <ClassManagement />
       <Discussion />
       <Testimonial />
+      <Footer />
     </div>
   );
 }
