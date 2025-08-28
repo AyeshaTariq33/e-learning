@@ -1,15 +1,16 @@
 import React from 'react';
-import Header from './Components/layout/Header';
-import HeroSection from './Components/layout/Hero Section';
-import AcievementsSection from './Components/layout/AchievementsSection';
-import FeaturesComponent from './Components/layout/Features';
-import WhatIsTotc from './Components/layout/TOTCSection';
-import ClassScope from './Components/layout/ClassScope';
-import OurFeatures from './Components/layout/OurFeatures';
-import Tools from './Components/layout/Tools';
-import Evaluation from './Components/layout/Evaluation';
-import ClassManagement from './Components/layout/ClassManagement';
-import Discussion from './Components/layout/Discussion';
+import Header from './Components/Header';
+import HeroSection from './Components/Hero Section';
+import AcievementsSection from './Components/AchievementsSection';
+import FeaturesComponent from './Components/Features';
+import WhatIsTotc from './Components/TOTCSection';
+import ClassScope from './Components/ClassScope';
+import OurFeatures from './Components/OurFeatures';
+import Tools from './Components/Tools';
+import Evaluation from './Components/Evaluation';
+import ClassManagement from './Components/ClassManagement';
+import Discussion from './Components/Discussion';
+import Testimonial from './Components/Testimonials';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Evaluation />
       <ClassManagement />
       <Discussion />
+      <Testimonial />
     </div>
   );
 }

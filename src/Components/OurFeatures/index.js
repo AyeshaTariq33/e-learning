@@ -1,14 +1,14 @@
 import React from 'react';
-import bigBlue from '../../../images/OurFeatures/BigBlueCircle.png';
-import call from '../../../images/OurFeatures/Call.png';
-import greenCircle from '../../../images/OurFeatures/GreenCircle.png';
-import redCircle from '../../../images/OurFeatures/RedCircle.png';
-import smallBlue from '../../../images/OurFeatures/SmallBlueCircle.png';
-import girl from '../../../images/OurFeatures/Girl.png';
-import boy from '../../../images/OurFeatures/Boy.png';
-import ta from '../../../images/OurFeatures/TA.png';
-import teams from '../../../images/OurFeatures/Teams.png';
-import contact from '../../../images/OurFeatures/Contact.png';
+import bigBlue from '../../images/OurFeatures/BigBlueCircle.png';
+import call from '../../images/OurFeatures/Call.png';
+import greenCircle from '../../images/OurFeatures/GreenCircle.png';
+import redCircle from '../../images/OurFeatures/RedCircle.png';
+import smallBlue from '../../images/OurFeatures/SmallBlueCircle.png';
+import girl from '../../images/OurFeatures/Girl.png';
+import boy from '../../images/OurFeatures/Boy.png';
+import ta from '../../images/OurFeatures/TA.png';
+import teams from '../../images/OurFeatures/Teams.png';
+import contact from '../../images/OurFeatures/Contact.png';
 
 import {
     OurFeaturesSection,

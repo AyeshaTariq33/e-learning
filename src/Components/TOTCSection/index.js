@@ -6,8 +6,8 @@ import {
   CardsContainer, 
   Card 
 } from './styles';
-import studentImg from '../../../images/WhatIsTOTC/Students.png';
-import instructorImg from '../../../images/WhatIsTOTC/Instructors.png';
+import studentImg from '../../images/WhatIsTOTC/Students.png';
+import instructorImg from '../../images/WhatIsTOTC/Instructors.png';
 
 const WhatIsTotc = () => {
   return (

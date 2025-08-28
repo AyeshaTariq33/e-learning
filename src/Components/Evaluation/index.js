@@ -1,12 +1,12 @@
 import React from 'react';
-import blue from '../../../images/Evaluation/blue.png';
-import cross from '../../../images/Evaluation/cross.png';
-import green from '../../../images/Evaluation/green.png';
-import orange from '../../../images/Evaluation/orange.png';
-import pink from '../../../images/Evaluation/pink.png';
-import submit from '../../../images/Evaluation/submit.png';
-import tick from '../../../images/Evaluation/tick.png';
-import fort from '../../../images/Evaluation/fort.png';
+import blue from '../../images/Evaluation/blue.png';
+import cross from '../../images/Evaluation/cross.png';
+import green from '../../images/Evaluation/green.png';
+import orange from '../../images/Evaluation/orange.png';
+import pink from '../../images/Evaluation/pink.png';
+import submit from '../../images/Evaluation/submit.png';
+import tick from '../../images/Evaluation/tick.png';
+import fort from '../../images/Evaluation/fort.png';
 
 import {
     Evaluations,

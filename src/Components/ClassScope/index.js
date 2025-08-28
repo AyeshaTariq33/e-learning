@@ -12,11 +12,11 @@ import {
   PlayButton       
 } from './styles';
 
-import classroom from '../../../images/ClassScope/classroom.png';
-import blueShape from '../../../images/ClassScope/BlueShape.png';
-import greenCircle from '../../../images/ClassScope/GreenCircle.png';
-import greenShape from '../../../images/ClassScope/GreenShape.png';
-import playButton from '../../../images/ClassScope/play-button.png';
+import classroom from '../../images/ClassScope/classroom.png';
+import blueShape from '../../images/ClassScope/BlueShape.png';
+import greenCircle from '../../images/ClassScope/GreenCircle.png';
+import greenShape from '../../images/ClassScope/GreenShape.png';
+import playButton from '../../images/ClassScope/play-button.png';
 
 
 const ClassScope = () => {

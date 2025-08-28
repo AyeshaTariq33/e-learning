@@ -1,13 +1,13 @@
 import react from "react";
-import background from '../../../images/Tools/background.png';
-import blueCircle from '../../../images/Tools/blueCircle.png';
-import girl from '../../../images/Tools/girl.png';
-import greenCircle from '../../../images/Tools/greenCircle.png';
-import hand from '../../../images/Tools/hand.png';
-import info from '../../../images/Tools/Info.png';
-import peachCircle from '../../../images/Tools/peachCircle.png';
-import redCircle from '../../../images/Tools/redCircle.png';
-import user from '../../../images/Tools/user.png';
+import background from '../../images/Tools/background.png';
+import blueCircle from '../../images/Tools/blueCircle.png';
+import girl from '../../images/Tools/girl.png';
+import greenCircle from '../../images/Tools/greenCircle.png';
+import hand from '../../images/Tools/hand.png';
+import info from '../../images/Tools/Info.png';
+import peachCircle from '../../images/Tools/peachCircle.png';
+import redCircle from '../../images/Tools/redCircle.png';
+import user from '../../images/Tools/user.png';
 import { 
     ToolsSection,
     Container,

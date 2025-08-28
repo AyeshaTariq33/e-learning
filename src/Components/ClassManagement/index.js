@@ -1,5 +1,5 @@
 import react from "react";
-import image from '../../../images/ClassManagement/image.png';
+import image from '../../images/ClassManagement/image.png';
 import { 
     Section,
     Container,

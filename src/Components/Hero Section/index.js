@@ -1,10 +1,10 @@
 import React from 'react';
-import heroButton from '../../../images/Hero/hero-button.png';
-import heroGirl from '../../../images/Hero/hero-girl.png';
-import calender from '../../../images/Hero/calender.png';
-import logistics from '../../../images/Hero/Logistics.png';
-import classTeacher from '../../../images/Hero/class-teacher.png';
-import admissionStatus from '../../../images/Hero/Mail.png';
+import heroButton from '../../images/Hero/hero-button.png';
+import heroGirl from '../../images/Hero/hero-girl.png';
+import calender from '../../images/Hero/calender.png';
+import logistics from '../../images/Hero/Logistics.png';
+import classTeacher from '../../images/Hero/class-teacher.png';
+import admissionStatus from '../../images/Hero/Mail.png';
 
 import {
   HeroContainer,

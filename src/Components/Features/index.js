@@ -1,7 +1,7 @@
 import React from 'react';
-import billingIcon from '../../../images/FeaturesSection/billing-icon.png';
-import schedulingIcon from '../../../images/FeaturesSection/calender.png';
-import trackingIcon from '../../../images/FeaturesSection/users.png';
+import billingIcon from '../../images/FeaturesSection/billing-icon.png';
+import schedulingIcon from '../../images/FeaturesSection/calender.png';
+import trackingIcon from '../../images/FeaturesSection/users.png';
 
 import {
   FeaturesSection,
