@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import billingIcon from '../../images/FeaturesSection/billing-icon.png';
 import schedulingIcon from '../../images/FeaturesSection/calender.png';
 import trackingIcon from '../../images/FeaturesSection/users.png';
@@ -24,7 +23,6 @@ const FeaturesComponent = ({
   feature3Title = "Customer Tracking",
   feature3Description = "Automate and track emails to individuals or groups. Skilline's built-in system helps organize your organization"
 }) => {
-  const [isVisible, setIsVisible] = useState(true);
 
   return (
     <FeaturesSection>

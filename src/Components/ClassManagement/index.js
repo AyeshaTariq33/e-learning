@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import image from '../../images/ClassManagement/image.png';
 
 import { 
@@ -14,8 +13,6 @@ const ClassManagement = ({
     description = "Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.",
 }) => {
     
-    const [isVisible, setIsVisible] = useState(true);
-
     return (
         <Section>
         <Container>

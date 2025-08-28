@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import logoImage from '../../images/Navbar/Logo.svg'; 
 
 import {
@@ -25,7 +24,6 @@ const Header = ({
   loginButtonText = "Login",
   signUpButtonText = "Sign Up"
 }) => {
-  const [isVisible, setIsVisible] = useState(true);
 
   return (
     <NavContainer>

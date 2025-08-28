@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 
 import {
   SuccessSection,
@@ -22,7 +21,6 @@ const SuccessComponent = ({
   yearsCount = "16",
   yearsLabel = "Years of experience"
 }) => {
-  const [isVisible, setIsVisible] = useState(true);
 
   return (
     <SuccessSection>

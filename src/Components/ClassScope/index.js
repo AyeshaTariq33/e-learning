@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { 
   ClassScopeSection, 
   ScopeContent, 
@@ -24,7 +23,6 @@ const ClassScope = ({
   description = "TOTC's school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.",
   linkText = "Learn More"
 }) => {
-  const [isVisible, setIsVisible] = useState(true);
 
   return (
     <ClassScopeSection>

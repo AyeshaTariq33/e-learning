@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import blue from '../../images/Evaluation/blue.png';
 import cross from '../../images/Evaluation/cross.png';
 import green from '../../images/Evaluation/green.png';
@@ -34,7 +33,6 @@ const Evaluation = ({
     endText = "Tests",
     description = "Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the online gradebook."
 }) => {
-    const [isVisible, setIsVisible] = useState(true);
 
     return (
         <Evaluations>

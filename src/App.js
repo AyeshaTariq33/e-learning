@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Components/Header';
-import HeroSection from './Components/Hero Section';
+import HeroSection from './Components/HeroSection';
 import AcievementsSection from './Components/AchievementsSection';
 import FeaturesComponent from './Components/Features';
 import WhatIsTotc from './Components/TOTCSection';

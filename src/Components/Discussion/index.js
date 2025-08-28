@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import image from '../../images/Discussion/image.png';
 import { 
     Section,
@@ -15,7 +14,6 @@ const Discussion = ({
     description = "Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.",
     buttonText = "See more features"
 }) => {
-    const [isVisible, setIsVisible] = useState(true);
 
     return (
         <Section>
