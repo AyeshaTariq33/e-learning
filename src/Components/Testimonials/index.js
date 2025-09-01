@@ -1,26 +1,5 @@
 import React, { useState } from "react";
-import { 
-    Section,
-    Container,
-    LeftContent,
-    RightContent,
-    Badge,
-    Title,
-    Description,
-    AssessmentText,
-    Button,
-    ArrowIcon,
-    ImageWrapper,
-    TestimonialCard,
-    TestimonialText,
-    AuthorName,
-    RatingWrapper,
-    Star,
-    ReviewCount,
-    NavigationButton,
-    Flag,
-    Wrapper
-} from './styles';
+import {Section} from './styles';
 
 import student from '../../images/Testimonials/student.png';
 
@@ -65,54 +44,62 @@ const Testimonial = ({
 
     return (
         <Section>
-            <Container>
-                <LeftContent>
-                    <Badge>{badgeText}</Badge>
-                    <Title>{title}</Title>
-                    <Description>
+            <div className="Container">
+                <div className="LeftContent">
+                    <div className="Badge">
+                        {badgeText}
+                    </div>
+                    <div className="Title">
+                        {title}
+                    </div>
+                    <div className="Description">
                         {description1}
-                    </Description>
-                    <Description>
+                    </div>
+                    <div className="Description">
                         {description2}
-                    </Description>
-                    <AssessmentText>
+                    </div>
+                    <div className="AssessmentText">
                         {assessmentText}
-                    </AssessmentText>
-                    <Button onClick={handleWriteAssessment} disabled={isSubmittingAssessment}>
+                    </div>
+                    <div className="Button" onClick={handleWriteAssessment} disabled={isSubmittingAssessment}>
                         <span>{isSubmittingAssessment ? 'Submitting...' : buttonText}</span>
-                        <ArrowIcon>
+                        <div className="ArrowIcon">
                             →
-                        </ArrowIcon>
-                    </Button>
-                </LeftContent>
+                        </div>
+                    </div>
+                </div>
                 
-                <RightContent>
-                    <ImageWrapper>
+                <div className="RightContent">
+                    <div className="ImageWrapper">
                         <img src={student} alt="Student with books" />
-                    </ImageWrapper>
-                    <TestimonialCard>
-                        <TestimonialText>
+                    </div>
+                    <div className="TestimonialCard">
+                        <div className="TestimonialText">
                             "{testimonials[currentTestimonial].text}"
-                        </TestimonialText>
-                        <Wrapper>
-                            <AuthorName>{testimonials[currentTestimonial].author}</AuthorName>
-                            <Flag>
-                                <RatingWrapper>
+                        </div>
+                        <div className="Wrapper">
+                            <div className="AuthorName">
+                                {testimonials[currentTestimonial].author}
+                            </div>
+                        <div className="Flag">
+                                <div className="RatingWrapper">
                                     {[...Array(5)].map((_, i) => (
-                                        <Star key={i} filled={i < testimonials[currentTestimonial].rating}>
+                                        <div className="Star" key={i} filled={i < testimonials[currentTestimonial].rating}>
                                             ★
-                                        </Star>
+                                        </div>
                                     ))}
-                                    <ReviewCount>{testimonials[currentTestimonial].reviews}</ReviewCount>
-                                </RatingWrapper>
-                            </Flag>
-                        </Wrapper>
-                    </TestimonialCard>
-                    <NavigationButton onClick={handleNavigation}>
+                                    <div className="ReviewCount">
+                                        {testimonials[currentTestimonial].reviews}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="NavigationButton" onClick={handleNavigation}>
                         ▷
-                    </NavigationButton>
-                </RightContent>
-            </Container>
+                    </div>
+                </div>
+            </div>
         </Section>
     );
 };

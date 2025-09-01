@@ -1,11 +1,6 @@
 import image from '../../images/ClassManagement/image.png';
 
-import { 
-    Section,
-    Container,
-    ImageWrapper,
-    TextWrapper,
-} from './styles';
+import {Section} from './styles';
 
 const ClassManagement = ({
     title = "Class Management",
@@ -15,15 +10,15 @@ const ClassManagement = ({
     
     return (
         <Section>
-        <Container>
-            <TextWrapper>
+        <div className="Container">
+            <div className="TextWrapper">
                 <h2><span>{title} </span>{subtitle} </h2>
                 <p>{description}</p>
-            </TextWrapper>
-            <ImageWrapper>
+            </div>
+            <div className="ImageWrapper">
                 <img src={image} alt="Classroom" />
-            </ImageWrapper>
-        </Container>
+            </div>
+        </div>
     </Section>
     );
 };  

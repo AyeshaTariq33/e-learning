@@ -1,15 +1,4 @@
-import { 
-  ClassScopeSection, 
-  ScopeContent, 
-  ScopeText,
-  ScopePlayVideo,
-  ClassRoom,
-  BlueShape,
-  GreenShape,
-  GreenCircleBig,
-  GreenCircleSmall,
-  PlayButton       
-} from './styles';
+import {ClassScopeSection} from './styles';
 
 import classroom from '../../images/ClassScope/classroom.png';
 import blueShape from '../../images/ClassScope/BlueShape.png';
@@ -26,33 +15,33 @@ const ClassScope = ({
 
   return (
     <ClassScopeSection>
-        <ScopeContent>
-            <ScopeText>
+        <div className="ScopeContent">
+            <div className="ScopeText">
                 <h2><span className='normal-class'>{normalText}</span><span className='totc-class'>{highlightText}</span></h2>
                 <p>{description}</p>
                 <a>{linkText}</a>
-            </ScopeText>
-            <GreenCircleBig>
+            </div>
+            <div className="GreenCircleBig">
                 <img src={greenCircle} alt="Green Circle" className='green-circle'/>
-            </GreenCircleBig>
-            <GreenCircleSmall>
+            </div>
+            <div className="GreenCircleSmall">
                 <img src={greenCircle} alt="Green Circle" className='green-circle'/>
-            </GreenCircleSmall>
-            <ScopePlayVideo>
-                <ClassRoom>
+            </div>
+            <div className="ScopePlayVideo">
+                <div className="ClassRoom">
                     <img src={classroom} alt="Classroom" className='classroom'/>
-                </ClassRoom>
-                <BlueShape>
+                </div>
+                <div className="BlueShape">
                     <img src={blueShape} alt="Blue Shape" className='blue-shape'/>
-                </BlueShape>
-                <GreenShape>
+                </div>
+                <div className="GreenShape">
                     <img src={greenShape} alt="Green Shape" className='green-shape'/>
-                </GreenShape>
-                <PlayButton>
+                </div>
+                <div className="PlayButton">
                     <img src={playButton} alt="Play Button" className='play-button'/>
-                </PlayButton>
-            </ScopePlayVideo>
-        </ScopeContent>
+                </div>
+            </div>
+        </div>
     </ClassScopeSection>
   );
 };

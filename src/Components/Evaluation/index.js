@@ -7,22 +7,7 @@ import submit from '../../images/Evaluation/submit.png';
 import tick from '../../images/Evaluation/tick.png';
 import fort from '../../images/Evaluation/fort.png';
 
-import {
-    Evaluations,
-    Container,
-    Title,
-    Wrapper,
-    Blue,
-    Cross,
-    Green,
-    Orange,
-    Pink,
-    Submit,
-    Tick,
-    Fort,
-    SubmitCard,
-    Card
-} from './styles';
+import {Evaluations} from './styles';
 
 const Evaluation = ({
     questionNumber = "Question 1",
@@ -36,45 +21,45 @@ const Evaluation = ({
 
     return (
         <Evaluations>
-            <Container>
-                <Wrapper>
-                    <Card>
+            <div className="Container">
+                <div className="Wrapper">
+                    <div className="Card">
                         <p>{questionNumber}</p>
                         <h2>{questionText}</h2>
-                        <Fort>
+                        <div className="Fort">
                             <img src={fort} alt='Fort' />
-                        </Fort>
-                    </Card>
-                    <SubmitCard>
-                        <Submit>
+                        </div>
+                    </div>
+                    <div className="SubmitCard">
+                        <div className="Submit">
                             <img src={submit} alt='Submit' />
-                        </Submit>
+                        </div>
                         <p>{successMessage}</p>
-                    </SubmitCard>
-                    <Tick>
+                    </div>
+                    <div className="Tick">
                         <img src={tick} alt='Tick' />
-                    </Tick>
-                    <Cross>
+                    </div>
+                    <div className="Cross">
                         <img src={cross} alt='Cross' />
-                    </Cross>
-                    <Blue>
+                    </div>
+                    <div className="Blue">
                         <img src={blue} alt='Blue circle' />
-                    </Blue>
-                    <Green>
+                    </div>
+                    <div className="Green">
                         <img src={green} alt='Green circle' />
-                    </Green>
-                    <Orange>
+                    </div>
+                    <div className="Orange">
                         <img src={orange} alt='Orange circle' />
-                    </Orange>
-                    <Pink>
+                    </div>
+                    <div className="Pink">
                         <img src={pink} alt='pink circle' />
-                    </Pink>
-                </Wrapper>
-                <Title>
+                    </div>
+                </div>
+                <div className="Title">
                     <h2>{title} <span>{highlightText} </span>{endText}</h2>
                     <p>{description}</p>
-                </Title>
-            </Container>
+                </div>
+            </div>
         </Evaluations>
     );
 };

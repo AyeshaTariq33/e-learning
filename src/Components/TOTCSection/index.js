@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
-import { 
-  TotcSection, 
-  TotcHeading, 
-  TotcDescription, 
-  CardsContainer, 
-  Card 
-} from './styles';
+import {TotcSection} from './styles';
 import studentImg from '../../images/WhatIsTOTC/Students.png';
 import instructorImg from '../../images/WhatIsTOTC/Instructors.png';
 
@@ -47,14 +41,14 @@ const WhatIsTotc = ({
 
   return (
     <TotcSection>
-      <TotcHeading>
+      <div className="TotcHeading">
         <span className='What-is'>{headingFirstPart}</span><span className='Totc'>{headingSecondPart}</span>
-      </TotcHeading>
-      <TotcDescription>
+      </div>
+      <div className="TotcDescription">
         {description}
-      </TotcDescription>
-      <CardsContainer>
-        <Card 
+      </div>
+      <div className="CardsContainer">
+        <div className="Card"
           style={{ 
             backgroundImage: `url(${instructorImg})`,
             transform: hoveredCard === 'instructor' ? 'scale(1.02)' : 'scale(1)',
@@ -68,8 +62,8 @@ const WhatIsTotc = ({
             <h3>{instructorCardTitle}</h3>
             <button onClick={handleInstructorClick}>{instructorButtonText}</button>
           </div>
-        </Card>
-        <Card 
+        </div>
+        <div className="Card"
           primary 
           style={{ 
             backgroundImage: `url(${studentImg})`,
@@ -84,8 +78,8 @@ const WhatIsTotc = ({
             <h3>{studentCardTitle}</h3>
             <button onClick={handleStudentClick}>{studentButtonText}</button>
           </div>
-        </Card>
-      </CardsContainer>
+        </div>
+      </div>
     </TotcSection>
   );
 };

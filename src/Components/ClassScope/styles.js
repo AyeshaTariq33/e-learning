@@ -5,9 +5,8 @@ export const ClassScopeSection = styled.section`
     overflow: hidden;
     position: relative;
     padding: 40px;
-`;
 
-export const ScopeContent = styled.div`
+    .ScopeContent{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -15,9 +14,9 @@ export const ScopeContent = styled.div`
   align-items: center;
   position: relative;
   gap: 30px;
-`;
+}
 
-export const ScopeText = styled.div`
+.ScopeText{
   flex: 1;
   z-index: 10;
   position: relative;
@@ -61,13 +60,13 @@ export const ScopeText = styled.div`
       color: #2F327D;
     }
   }
-`;
+}
 
-export const ScopePlayVideo = styled.div`
+.ScopePlayVideo{
   position: relative;
-`;
+}
 
-export const ClassRoom = styled.div`
+.ClassRoom{
   position: relative;
   z-index: 5;
   border-radius: 20px;
@@ -81,9 +80,9 @@ export const ClassRoom = styled.div`
     max-width: 470px;
     border-radius: 20px;
   }
-`;
+}
 
-export const BlueShape = styled.div`
+.BlueShape{
   position: absolute;
   top: -20px;
   left: -20px;
@@ -94,9 +93,9 @@ export const BlueShape = styled.div`
     height: auto;
     display: block;
   }
-`;
+}
 
-export const GreenShape = styled.div`
+.GreenShape{
   position: absolute;
   bottom: -15px;
   right: -20px;
@@ -107,9 +106,9 @@ export const GreenShape = styled.div`
    height: auto;
    display: block;
   }
-`;
+}
 
-export const GreenCircleBig = styled.div`
+.GreenCircleBig{
   position: absolute;
   top: 40px;
   left: 10px;
@@ -119,9 +118,9 @@ export const GreenCircleBig = styled.div`
     max-width: 40px;
     height: auto;
   }
-`;
+}
 
-export const GreenCircleSmall = styled.div`
+.GreenCircleSmall{
   position: absolute;
   top: 148px;
   left: 505px;
@@ -132,9 +131,9 @@ export const GreenCircleSmall = styled.div`
   height: auto;
   display: block;
   }
-`;
+}
 
-export const PlayButton = styled.div`
+.PlayButton{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -148,4 +147,5 @@ export const PlayButton = styled.div`
     height: auto;
     display: block;
   }
+}
 `;

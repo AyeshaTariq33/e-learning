@@ -3,15 +3,14 @@ import styled from 'styled-components';
 export const SuccessSection = styled.section`
   margin-bottom: 100px;
   text-align: center;
-`;
 
-export const Container = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-`;
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-export const SectionHeader = styled.div`
+.SectionHeader{
   margin-bottom: 60px;
   
   h2 {
@@ -29,16 +28,16 @@ export const SectionHeader = styled.div`
     max-width: 600px;
     margin: 0 auto;
   }
-`;
+}
 
-export const StatsFlex = styled.div`
+.StatsFlex{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 65px;
-`;
+}
 
-export const StatItem = styled.div`
+.StatItem{
   flex: 1;
   max-width: 150px;
   
@@ -59,4 +58,5 @@ export const StatItem = styled.div`
     margin: 0;
     line-height: 1.4;
   }
+}
 `;

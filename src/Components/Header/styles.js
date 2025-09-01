@@ -8,24 +8,24 @@ export const NavContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding-bottom: 30px;
-`;
 
-export const Logo = styled.img`
+  
+.Logo{
   max-width: 70px;
   height: auto;
   cursor: pointer;
-`;
+}
 
-export const NavMenu = styled.ul`
+.NavMenu{
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
   gap: 32px;
   align-items: center;
-`;
+}
 
-export const NavItem = styled.li`
+.NavItem{
   a {
     color: white;
     text-decoration: none;
@@ -34,14 +34,14 @@ export const NavItem = styled.li`
       opacity: 0.8;
     }
   }
-`;
+}
 
-export const ButtonGroup = styled.div`
+.ButtonGroup{
   display: flex;
   gap: 12px;
-`;
+}
 
-export const LoginButton = styled.button`
+.LoginButton{
   background-color: white;
   color: black;
   border: none;
@@ -55,9 +55,9 @@ export const LoginButton = styled.button`
   &:hover {
     background-color: #38b2ac;
   }
-`;
+}
 
-export const SignUpButton = styled.button`
+.SignUpButton{
   background-color: #FFFFFF4D;
   color: white;
   border: none;
@@ -71,4 +71,5 @@ export const SignUpButton = styled.button`
   &:hover {
     background-color: #f3f4f6;
   }
+}
 `;

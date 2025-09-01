@@ -2,15 +2,7 @@ import billingIcon from '../../images/FeaturesSection/billing-icon.png';
 import schedulingIcon from '../../images/FeaturesSection/calender.png';
 import trackingIcon from '../../images/FeaturesSection/users.png';
 
-import {
-  FeaturesSection,
-  Container,  
-  SectionHeader,
-  FeaturesFlex,
-  FeatureCard,
-  IconWrapper,
-  FeatureContent
-} from './styles';
+import {FeaturesSection} from './styles';
 
 const FeaturesComponent = ({
   mainTitle = "All-In-One",
@@ -26,48 +18,48 @@ const FeaturesComponent = ({
 
   return (
     <FeaturesSection>
-      <Container>
-        <SectionHeader>
+      <div className="Container">
+        <div className="SectionHeader">
           <h2>
             <span className="all-in-one">{mainTitle}</span>{' '}
             <span className="cloud-software">{highlightTitle}</span>
           </h2>
           <p>{description}</p>
-        </SectionHeader>
+        </div>
         
-        <FeaturesFlex>
-          <FeatureCard>
-            <IconWrapper className="billing">
+        <div className="FeaturesFlex">
+          <div className="FeatureCard">
+            <div className="IconWrapper billing">
               <img src={billingIcon} alt="Billing Icon" />
-            </IconWrapper>
-            <FeatureContent>
+            </div>
+            <div className="FeatureContent">
               <h3>{feature1Title}</h3>
               <p>{feature1Description}</p>
-            </FeatureContent>
-          </FeatureCard>
+            </div>
+          </div>
             
-          <FeatureCard>
-              <IconWrapper className="scheduling">
+          <div className="FeatureCard">
+              <div className="IconWrapper scheduling">
                 <img src={schedulingIcon} alt="Scheduling Icon" />
-              </IconWrapper>
-              <FeatureContent>
+              </div>
+              <div className="FeatureContent">
                 <h3>{feature2Title}</h3>
                 <p>{feature2Description}</p>
-              </FeatureContent>
-          </FeatureCard>
+              </div>
+          </div>
             
-          <FeatureCard>
-              <IconWrapper className="tracking">
+          <div className="FeatureCard">
+              <div className="IconWrapper tracking">
                 <img src={trackingIcon} alt="Customer Tracking Icon" />
-              </IconWrapper>
-              <FeatureContent>
+              </div>
+              <div className="FeatureContent">
                 <h3>{feature3Title}</h3>
                 <p>{feature3Description}</p>
-              </FeatureContent>
-          </FeatureCard>
+              </div>
+          </div>
 
-        </FeaturesFlex>
-      </Container>
+        </div>
+      </div>
     </FeaturesSection>
   );
 };

@@ -10,24 +10,7 @@ import ta from '../../images/OurFeatures/TA.png';
 import teams from '../../images/OurFeatures/Teams.png';
 import contact from '../../images/OurFeatures/Contact.png';
 
-import {
-    OurFeaturesSection,
-    Container,
-    Title,
-    Wrapper,
-    ImagesWrapper,
-    FeaturesWrapper,
-    BigBlue,
-    SmallBlue,
-    RedCircle,
-    GreenCircle,
-    Call,
-    Teams,
-    TA,
-    Contact,
-    Girl,
-    Boy
-} from './styles';
+import {OurFeaturesSection} from './styles';
 
 const OurFeatures = ({
     titleFirstPart = "Our",
@@ -63,46 +46,46 @@ const OurFeatures = ({
 
     return (
         <OurFeaturesSection>
-            <Container>
-                <Title>
+            <div className="Container">
+                <div className="Title">
                     <h2><span>{titleFirstPart}</span><span>{titleSecondPart}</span></h2>
                     <p>{description}</p>
-                </Title>
-                <Wrapper>
-                    <ImagesWrapper>
-                        <BigBlue>
+                </div>
+                <div className="Wrapper">
+                    <div className="ImagesWrapper">
+                        <div className="BigBlue">
                             <img src={bigBlue} alt="Big Blue Circle" className="bigBlue"/>
-                        </BigBlue>
-                        <SmallBlue>
+                        </div>
+                        <div className="SmallBlue">
                             <img src={smallBlue} alt="Small Blue Circle" className="smallBlue"/>
-                        </SmallBlue>
-                        <RedCircle>
+                        </div>
+                        <div className="RedCircle">
                             <img src={redCircle} alt="Red Circle" className="redCircle"/> 
-                        </RedCircle>  
-                        <GreenCircle>
+                        </div>  
+                        <div className="GreenCircle">
                             <img src={greenCircle} alt="Green Circle" className="greenCircle"/>
-                        </GreenCircle>
-                        <Call>
+                        </div>
+                        <div className="Call">
                             <img src={call} alt="Call" className="Call"/>
-                        </Call>
+                        </div>
                         {showGirl && (
-                            <Girl>
-                                <img src={girl} alt="Girl" />
-                            </Girl>
+                        <div className="Girl">
+                            <img src={girl} alt="Girl" />
+                        </div>
                         )}
                         {showBoy && (
-                            <Boy>
-                                <img src={boy} alt="Boy" />
-                            </Boy>
+                        <div className="Boy">
+                            <img src={boy} alt="Boy" />
+                        </div>
                         )}
-                    </ImagesWrapper>
-                    <FeaturesWrapper>
+                    </div>
+                    <div className="FeaturesWrapper">
                         <h2>
                             <span className='design'>{mainHeadingPart1}</span>
                             <span className='user-interface'>{mainHeadingHighlight}</span>
                             <span className='design'>{mainHeadingPart2}</span>
                         </h2>
-                        <Teams 
+                        <div className="Teams" 
                             onClick={() => handleFeatureClick('teams')}
                             onMouseEnter={() => handleFeatureHover('teams')}
                             onMouseLeave={handleFeatureLeave}
@@ -115,8 +98,8 @@ const OurFeatures = ({
                         >
                             <img src={teams} alt="Teams" className="teams"/>
                             <p>{teamsFeatureText}</p>
-                        </Teams>
-                        <TA 
+                        </div>
+                        <div className="TA"
                             onClick={() => handleFeatureClick('ta')}
                             onMouseEnter={() => handleFeatureHover('ta')}
                             onMouseLeave={handleFeatureLeave}
@@ -129,8 +112,8 @@ const OurFeatures = ({
                         >
                             <img src={ta} alt="TA" className="TA"/>
                             <p>{taFeatureText}</p>
-                        </TA>
-                        <Contact 
+                        </div>
+                        <div className="Contact"
                             onClick={() => handleFeatureClick('contact')}
                             onMouseEnter={() => handleFeatureHover('contact')}
                             onMouseLeave={handleFeatureLeave}
@@ -143,10 +126,10 @@ const OurFeatures = ({
                         >
                             <img src={contact} alt="Contact" className="contact"/>
                             <p>{contactFeatureText}</p>
-                        </Contact>
-                    </FeaturesWrapper>
-                </Wrapper>
-            </Container>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </OurFeaturesSection>
     );
 };

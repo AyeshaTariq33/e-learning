@@ -3,23 +3,23 @@ import styled from "styled-components";
 export const Section = styled.section`
     width: 100%;
     padding: 40px;
-`;
 
-export const Container = styled.div`
+    
+.Container{
     width: 100%;
     max-width: 1200px;
     padding: 20px 0;
     margin: 0 auto;
-`;
+}
 
-export const Wrapper = styled.div`
+.Wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
-`;
+}
 
-export const ImageWrapper = styled.div`
+.ImageWrapper{
 
      img {
         object-fit: cover;
@@ -27,9 +27,9 @@ export const ImageWrapper = styled.div`
         max-width: 545px;
         height: auto;
     }
-`;
+}
 
-export const TextWrapper = styled.div`
+.TextWrapper{
     max-width: 450px;
     position: relative;
 
@@ -55,9 +55,9 @@ export const TextWrapper = styled.div`
         text-align: justify;
         color: #696984;
     }
-`;
+}
 
-export const Button = styled.div`
+.Button{
     border: 1px solid #49BBBD; 
     padding: 12px 15px;
     display: block; 
@@ -81,4 +81,5 @@ export const Button = styled.div`
             color: white;
         }
     }
+}
 `;

@@ -3,15 +3,15 @@ import styled from 'styled-components';
 export const FeaturesSection = styled.section`
   margin-bottom: 80px;
   text-align: center;
-`;
 
-export const Container = styled.div`
+  
+.Container{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-`;
+}
 
-export const SectionHeader = styled.div`
+.SectionHeader{
   margin-bottom: 80px;
   
   h2 {
@@ -36,17 +36,17 @@ export const SectionHeader = styled.div`
     margin: 0 auto;
     max-width: 600px;
   }
-`;
+}
 
-export const FeaturesFlex = styled.div`
+.FeaturesFlex{
   display: flex;
   gap: 40px;
   align-items: center;
   justify-content: center;
   gap: 60px;
-`;
+}
 
-export const FeatureCard = styled.div`
+.FeatureCard{
     flex: 1;
     max-width: 270px;
     height: 270px;
@@ -55,9 +55,9 @@ export const FeatureCard = styled.div`
     padding: 20px;
     border-radius: 10px;
     position: relative;
-  `;
+  }
 
-export const IconWrapper = styled.div`
+.IconWrapper{
   max-width: 100px;
   height: auto;
   display: flex;
@@ -73,9 +73,9 @@ export const IconWrapper = styled.div`
   height: auto;
   border-radius: 100%;
   }
-`;
+}
 
-export const FeatureContent = styled.div`
+.FeatureContent{
 margin-top: 40px;
 color: #2F327D;
 
@@ -91,4 +91,5 @@ color: #2F327D;
     line-height: 20px;
     margin: 0;
   }
+}
 `;

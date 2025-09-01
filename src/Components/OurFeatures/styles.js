@@ -5,16 +5,16 @@ export const OurFeaturesSection = styled.section`
   align-items: center;
   margin-bottom: 80px;
   padding: 40px;
-`;
 
-export const Container = styled.div`
+  
+.Container{
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-`;
+}
 
-export const Title = styled.div`
+.Title{
   text-align: center;
   margin-bottom: 120px;
   
@@ -41,23 +41,23 @@ export const Title = styled.div`
     margin: 0 auto;
     line-height: 20px;
   }
-`;
+}
 
-export const Wrapper = styled.div`
+.Wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 175px;
-`;
+}
 
-export const ImagesWrapper = styled.div`
+.ImagesWrapper{
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+}
 
-export const Call = styled.div`
+.Call{
   position: relative;
   z-index: 3;
   background: white;
@@ -69,9 +69,9 @@ export const Call = styled.div`
     height: auto;
     display: block;
   }
-`;
+}
 
-export const BigBlue = styled.div`
+.BigBlue{
   position: absolute;
   bottom: -55px;
   right: -50px;
@@ -82,9 +82,9 @@ export const BigBlue = styled.div`
     height: auto;
     display: block;
   }
-`;
+}
 
-export const SmallBlue = styled.div`
+.SmallBlue{
   position: absolute;
   top: -50px;
   left: 145px;
@@ -95,9 +95,9 @@ export const SmallBlue = styled.div`
     height: auto;
     display: block;
   }
-`;
+}
 
-export const RedCircle = styled.div`
+.RedCircle{
     position: absolute;
     bottom: -55px;
     right: 105px;
@@ -108,9 +108,9 @@ export const RedCircle = styled.div`
     height: auto;
     display: block;
   }
-`;
+}
 
-export const GreenCircle = styled.div`
+.GreenCircle{
   position: absolute;
   top: -50px;
   left: 40px;
@@ -121,9 +121,9 @@ export const GreenCircle = styled.div`
     height: auto;
     display: block;
   }
-`;
+}
 
-export const Girl = styled.div`
+.Girl{
   position: absolute;
   bottom: -59px;
   right: -105px;
@@ -134,9 +134,9 @@ export const Girl = styled.div`
     height: auto;
     display: block;
   }
-`;
+}
 
-export const Boy = styled.div`
+.Boy{
   position: absolute;
   bottom: 113px;
   right: -97px;
@@ -147,9 +147,9 @@ export const Boy = styled.div`
     height: auto;
     display: block;
   }
-`;
+}
 
-export const FeaturesWrapper = styled.div`
+.FeaturesWrapper{
   flex: 1;
   max-width: 400px;
 
@@ -167,9 +167,9 @@ export const FeaturesWrapper = styled.div`
       color: #00CBB8;
     }
   }
-`;
+}
 
-export const Teams = styled.div`
+.Teams{
   display: flex;
   align-items: center;
   gap: 20px;
@@ -189,9 +189,9 @@ export const Teams = styled.div`
     line-height: 24px;
     margin: 0;
   }
-`;
+}
 
-export const TA = styled.div`
+.TA{
   display: flex;
   align-items: center;
   gap: 20px;
@@ -211,9 +211,9 @@ export const TA = styled.div`
     line-height: 24px;
     margin: 0;
   }
-`;
+}
 
-export const Contact = styled.div`
+.Contact{
   display: flex;
   align-items: center;
   gap: 20px;
@@ -232,4 +232,5 @@ export const Contact = styled.div`
     line-height: 24px;
     margin: 0;
   }
+}
 `;

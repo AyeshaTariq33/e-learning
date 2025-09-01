@@ -1,14 +1,6 @@
 import logoImage from '../../images/Navbar/Logo.svg'; 
 
-import {
-  NavContainer,
-  Logo,
-  NavMenu,
-  NavItem,
-  ButtonGroup,
-  LoginButton,
-  SignUpButton
-} from './styles';
+import {NavContainer} from './styles';
 
 const Header = ({
   homeText = "Home",
@@ -27,28 +19,32 @@ const Header = ({
 
   return (
     <NavContainer>
-        <Logo src={logoImage} alt="TOTC Logo" />
-          <NavMenu>
-              <NavItem>
+        <div className="Logo" src={logoImage} alt="TOTC Logo" />
+          <div className="NavMenu">
+              <div className="NavItem">
                 <a href={homeHref}>{homeText}</a>
-              </NavItem>
-              <NavItem>
+              </div>
+              <div className="NavItem">
                 <a href={coursesHref}>{coursesText}</a>
-              </NavItem>
-              <NavItem>
+              </div>
+              <div className="NavItem">
                 <a href={careersHref}>{careersText}</a>
-              </NavItem>
-              <NavItem>
+              </div>
+              <div className="NavItem">
                 <a href={blogHref}>{blogText}</a>
-              </NavItem>
-              <NavItem>
+              </div>
+              <div className="NavItem">
                 <a href={aboutHref}>{aboutText}</a>
-              </NavItem>
-              <ButtonGroup>
-              <LoginButton>{loginButtonText}</LoginButton>
-              <SignUpButton>{signUpButtonText}</SignUpButton>
-          </ButtonGroup>
-          </NavMenu>
+              </div>
+              <div className="ButtonGroup">
+              <div className="LoginButton">
+                {loginButtonText}
+              </div>
+              <div className="SignUpButton">
+                {signUpButtonText}
+              </div>
+          </div>
+          </div>
     </NavContainer>
   );
 };

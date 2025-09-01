@@ -8,21 +8,7 @@ import info from '../../images/Tools/Info.png';
 import peachCircle from '../../images/Tools/peachCircle.png';
 import redCircle from '../../images/Tools/redCircle.png';
 import user from '../../images/Tools/user.png';
-import { 
-    ToolsSection,
-    Container,
-    ImageWrapper,
-    TextWrapper,
-    Background,
-    BlueCircle,
-    GreenCircle,
-    PeachCircle,
-    RedCircle,
-    User,
-    Info,
-    Hand,
-    Girl
-} from './styles';
+import {ToolsSection} from './styles';
 
 const Tools = ({
     titleFirstPart = "Tools ",
@@ -53,37 +39,37 @@ const Tools = ({
 
     return (
         <ToolsSection>
-            <Container>
-                <TextWrapper>
+            <div className="Container">
+                <div className="TextWrapper">
                     {showHand && (
-                        <Hand>
+                        <div className="Hand">
                             <img src={hand} alt="Hand" className="hand"/>
-                        </Hand>
+                        </div>
                     )}
                     <h2><span>{titleFirstPart}</span><span>{titleSecondPart}</span></h2>
                     <p>{description}</p>
-                </TextWrapper>
-                <ImageWrapper>
-                    <Background>
+                </div>
+                <div className="ImageWrapper">
+                    <div className="Background">
                         <img src={background} alt="Background" className="background"/>
-                    </Background>
+                    </div>
                     {showDecorations && (
                         <>
-                            <BlueCircle>
+                            <div className="BlueCircle">
                                 <img src={blueCircle} alt="Blue Circle" className="blueCircle"/>
-                            </BlueCircle>  
-                            <GreenCircle>
+                            </div>  
+                            <div className="GreenCircle">
                                 <img src={greenCircle} alt="Green Circle" className="greenCircle"/>
-                            </GreenCircle>
-                            <PeachCircle>
+                            </div>
+                            <div className="PeachCircle">
                                 <img src={peachCircle} alt="Peach Circle" className="peachCircle"/>
-                            </PeachCircle>
-                            <RedCircle>
+                            </div>
+                            <div className="RedCircle">
                                 <img src={redCircle} alt="Red Circle" className="redCircle"/>
-                            </RedCircle>
+                            </div>
                         </>
                     )}
-                    <User 
+                    <div className="User" 
                         onClick={() => handleElementClick('user')}
                         onMouseEnter={() => handleElementHover('user')}
                         onMouseLeave={handleElementLeave}
@@ -95,8 +81,8 @@ const Tools = ({
                         }}
                     >
                         <img src={user} alt="User" className="user"/>
-                    </User>
-                    <Info 
+                    </div>
+                    <div className="Info"
                         onClick={() => handleElementClick('info')}
                         onMouseEnter={() => handleElementHover('info')}
                         onMouseLeave={handleElementLeave}
@@ -108,9 +94,9 @@ const Tools = ({
                         }}
                     >
                         <img src={info} alt="Info" className="info"/>
-                    </Info>
+                    </div>
                     {showGirl && (
-                        <Girl 
+                        <div className="Girl"
                             onClick={() => handleElementClick('girl')}
                             onMouseEnter={() => handleElementHover('girl')}
                             onMouseLeave={handleElementLeave}
@@ -122,10 +108,10 @@ const Tools = ({
                             }}
                         >
                             <img src={girl} alt="Girl" />
-                        </Girl>
+                        </div>
                     )}
-                </ImageWrapper>
-            </Container>
+                </div>
+            </div>
         </ToolsSection>
     );
 };  

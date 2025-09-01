@@ -62,35 +62,35 @@ const HeroSection = ({
 
   return (
     <HeroContainer>
-        <HeroContent>
+        <div className="HeroContent">
           <h2><span>{title}</span> {highlightText}</h2>
           <p>{description}</p>
-          <HeroButtonsContainer>
-            <JoinForFreeButton onClick={handleJoinClick} disabled={isJoining}>
+          <div className="HeroButtonsContainer">
+            <div className="JoinForFreeButton" onClick={handleJoinClick} disabled={isJoining}>
               {isJoining ? 'Joining...' : joinButtonText}
-            </JoinForFreeButton>
-            <VideoButton onClick={handleVideoClick}>
+            </div>
+            <div className="VideoButton" onClick={handleVideoClick}>
               <img src={heroButton} alt='Play'/>
               {videoButtonText}
-            </VideoButton>
-          </HeroButtonsContainer>
-        </HeroContent>
+            </div>
+          </div>
+        </div>
 
-        <HeroImages>
-            <HeroGirl>
+        <div className="HeroImages">
+            <div className="HeroGirl">
               <img src={heroGirl} alt='Hero'/>
-            </HeroGirl>
-            <AssistedStudentsCount>
+            </div>
+            <div className="AssistedStudentsCount">
               <img src={calender} alt='Calendar'/> 
               <div className="content">
                 <h4>{studentCount}</h4>
                 <p>{studentCountLabel}</p>
               </div>
-            </AssistedStudentsCount>
-            <Logistics>
+            </div>
+            <div className="Logistics">
               <img src={logistics} alt='Logistics'/>
-            </Logistics>
-            <ClassSchedule>
+            </div>
+            <div className="ClassSchedule">
                 <div className="top-section">
                     <img src={classTeacher} alt='Teacher'/> 
                     <div className="content">
@@ -99,17 +99,17 @@ const HeroSection = ({
                     </div>
                 </div>
                 <button onClick={handleClassJoinClick}>{joinNowText}</button>
-            </ClassSchedule>
+            </div>
             {showCongrats && (
-              <AdmissionStatus>
+              <div className="AdmissionStatus">
                 <img src={admissionStatus} alt='Mail'/> 
                 <div className="content">
                   <h4>{congratsTitle}</h4>
                   <p>{congratsMessage}</p>
                 </div>
-              </AdmissionStatus>
+              </div>
             )}
-        </HeroImages>
+        </div>
     </HeroContainer>
   );
 };

@@ -9,32 +9,32 @@ export const FooterSection = styled.footer`
   align-items: center;
   min-height: 350px;
   justify-content: center;
-`;
 
-export const Container = styled.div`
+  
+.Container{
     max-width: 1200px;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-`;
+}
 
-export const LogoSection = styled.div`
+.LogoSection{
   display: flex;
   align-items: center;
   gap: 20px;
   margin-bottom: 60px;
-`;
+}
 
-export const Logo = styled.img`
+.Logo{
     max-width: 70px;
     height: auto;
     padding: 0 5px 0 0;
     border-right: 1px solid;
-`;
+}
 
-export const LogoText = styled.div`
+.LogoText{
   display: flex;
   flex-direction: column;
   
@@ -44,33 +44,33 @@ export const LogoText = styled.div`
     line-height: 20px;
     color: #ffffff;
   }
-`;
+}
 
-export const NewsletterSection = styled.div`
+.NewsletterSection{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
   margin-bottom: 60px;
-`;
+}
 
 
 
-export const NewsletterTitle = styled.h3`
+.NewsletterTitle{
     font-size: 16px;
     font-weight: 200;
     color: #b8b8c7;
     text-align: center;
     margin: 0;
-`;
+}
 
-export const EmailForm = styled.form`
+.EmailForm{
   display: flex;
   gap: 15px;
   align-items: center;
-`;
+}
 
-export const EmailInput = styled.input`
+.EmailInput{
     background: transparent;
     border: 1px solid #525270;
     border-radius: 50px;
@@ -83,9 +83,9 @@ export const EmailInput = styled.input`
   &::placeholder {
     color: #8b8ba7;
   }
-`;
+}
 
-export const SubscribeButton = styled.button`
+.SubscribeButton{
   background-color: #49BBBD;
   color: #ffffff;
   border: none;
@@ -100,20 +100,20 @@ export const SubscribeButton = styled.button`
     background-color: #3aa8ab;
     transform: translateY(-2px);
   }
-`;
+}
 
-export const LinksSection = styled.div`
+.LinksSection{
     margin-bottom: 10px;
 
-`;
+}
 
-export const FooterLinks = styled.div`
+.FooterLinks{
   display: flex;
   gap: 40px;
   align-items: center;
-`;
+}
 
-export const FooterLink = styled.a`
+.FooterLink{
   color: #b8b8c7;
   text-decoration: none;
   font-size: 14px;
@@ -132,10 +132,11 @@ export const FooterLink = styled.a`
   &:last-child::after {
     display: none;
   }
-`;
+}
 
-export const Copyright = styled.p`
+.Copyright{
   color: #8b8ba7;
   font-size: 14px;
   text-align: center;
+}
 `;

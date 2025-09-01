@@ -11,9 +11,9 @@ export const HeroContainer = styled.div`
     gap: 145px;
     overflow: hidden; 
     position: relative;
-`;
 
-export const HeroContent = styled.div`
+    
+.HeroContent{
     max-width: 500px;
     color: white;
     align-self: center; 
@@ -34,17 +34,17 @@ export const HeroContent = styled.div`
         font-weight: 100;
         margin-bottom: 30px;
     }
-`;
+}
 
-export const HeroButtonsContainer = styled.div`
+HeroButtonsContainer{
     display: flex;
     gap: 20px;
     align-items: center;
     margin-bottom: 50px;
     flex-wrap: wrap;
-`;
+}
 
-export const JoinForFreeButton = styled.button`
+.JoinForFreeButton{
     background-color: #FFFFFF4D;
     border: none;
     padding: 15px 30px;
@@ -56,9 +56,9 @@ export const JoinForFreeButton = styled.button`
     &:hover {
         background-color: #FFFFFF66;
     }
-`;
+}
 
-export const VideoButton = styled.button`
+.VideoButton{
     background: transparent;
     border: none;
     color: #292929ee;
@@ -78,9 +78,9 @@ export const VideoButton = styled.button`
     &:hover {
         opacity: 0.8;
     }
-`;
+}
 
-export const HeroImages = styled.div`
+.HeroImages{
     position: relative;
     justify-content: center;
     
@@ -91,9 +91,9 @@ export const HeroImages = styled.div`
         display: block;
         z-index: 1;
     }
-`;
+}
 
-export const HeroContainerClipped = styled.div`
+.HeroContainerClipped{
     background-color: #49BBBD;
     padding: 60px 20px 100px;
     margin-bottom: 30px;
@@ -103,16 +103,16 @@ export const HeroContainerClipped = styled.div`
     min-height: 90vh;
     position: relative;
     clip-path: ellipse(100% 100% at 50% 0%);
-`;
+}
 
-export const HeroImagesClipped = styled.div`
+.HeroImagesClipped{
     position: relative;
     flex: 1;
     display: flex;
     justify-content: center;
-`;
+}
     
-export const HeroGirl = styled.div`
+.HeroGirl{
     position: relative;
     
     img {
@@ -121,9 +121,9 @@ export const HeroGirl = styled.div`
         height: auto;
         display: block;
     }
-`;
+}
 
-export const AssistedStudentsCount = styled.div`
+.AssistedStudentsCount{
     position: absolute;
     top: 35%;
     left: -15%;
@@ -158,9 +158,9 @@ export const AssistedStudentsCount = styled.div`
             color: #666;
         }
     }
-`;
+}
 
-export const Logistics = styled.div`
+.Logistics{
     position: absolute;
     top: 15%;
     left: 70%;
@@ -171,9 +171,9 @@ export const Logistics = styled.div`
         height: auto;
         max-width: none;
     }
-`;
+}
 
-export const ClassSchedule = styled.div`
+.ClassSchedule{
     position: absolute;
     top: 62%;
     left: -16%;
@@ -232,9 +232,9 @@ export const ClassSchedule = styled.div`
             border: 1px solid #D8587E;
         }
     }
-`;
+}
 
-export const AdmissionStatus = styled.div`
+.AdmissionStatus{
     position: absolute;
     top: 50%;
     left: 59%;
@@ -268,4 +268,5 @@ export const AdmissionStatus = styled.div`
             color: #666;
         }
     }
+}
 `;

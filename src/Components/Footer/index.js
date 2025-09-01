@@ -1,21 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../../images/Footer/Logo.svg';
-import {
-  FooterSection,
-  Container,
-  LogoSection,
-  Logo,
-  LogoText,
-  NewsletterSection,
-  NewsletterTitle,
-  EmailForm,
-  EmailInput,
-  SubscribeButton,
-  LinksSection,
-  FooterLinks,
-  FooterLink,
-  Copyright
-} from './styles';
+import {FooterSection} from './styles';
 
 const Footer = ({
   logoText1 = "Virtual Class",
@@ -41,43 +26,45 @@ const Footer = ({
 
   return (
     <FooterSection>
-      <Container>
-        <LogoSection>
-          <Logo src={logo} alt="TOTC Logo" />
-          <LogoText>
+      <div className="Container">
+        <div className="LogoSection">
+          <div className="Logo" src={logo} alt="TOTC Logo" />
+          <div className="LogoText">
             <span>{logoText1}</span>
             <span>{logoText2}</span>
-          </LogoText>
-        </LogoSection>
+          </div>
+        </div>
 
-        <NewsletterSection>
-          <NewsletterTitle>{newsletterTitle}</NewsletterTitle>
-          <EmailForm onSubmit={handleSubmit}>
-            <EmailInput
+        <div className="NewsletterSection">
+          <div className="NewsletterTitle">
+            {newsletterTitle}
+          </div>
+          <div className="EmailForm" onSubmit={handleSubmit}>
+            <div className="EmailInput"
               type="email"
               placeholder={emailPlaceholder}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <SubscribeButton type="submit">
+            <div className="SubscribeButton" type="submit">
               {subscribeButtonText}
-            </SubscribeButton>
-          </EmailForm>
-        </NewsletterSection>
+            </div>
+          </div>
+        </div>
 
-        <LinksSection>
-          <FooterLinks>
-            <FooterLink href={link1Href}>{link1Text}</FooterLink>
-            <FooterLink href={link2Href}>{link2Text}</FooterLink>
-            <FooterLink href={link3Href}>{link3Text}</FooterLink>
-          </FooterLinks>
-        </LinksSection>
+        <div className="LinksSection">
+          <div className="FooterLinkss">
+            <div className="FooterLink" href={link1Href}>{link1Text}</div>
+            <div className="FooterLink" href={link2Href}>{link2Text}</div>
+            <div className="FooterLink" href={link3Href}>{link3Text}</div>
+          </div>
+        </div>
 
-        <Copyright>
+        <div className="Copyright">
           {copyrightText}
-        </Copyright>
-      </Container>
+        </div>
+      </div>
     </FooterSection>
   );
 };

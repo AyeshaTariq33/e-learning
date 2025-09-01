@@ -5,9 +5,9 @@ export const TotcSection = styled.section`
   padding: 0 20px;
   color: #333;
   margin-bottom: 60px;
-`;
 
-export const TotcHeading = styled.h2`
+  
+.TotcHeading{
   font-size: 28px;
   line-height: 36px;
   font-weight: 500;
@@ -19,9 +19,9 @@ export const TotcHeading = styled.h2`
     .What-is {
         color: #2F327D;
     }
-`;
+}
 
-export const TotcDescription = styled.p`
+.TotcDescription{
   max-width: 700px;
   word-spacing: 1.5px;
   letter-spacing: 1px;
@@ -29,16 +29,16 @@ export const TotcDescription = styled.p`
   font-size: 14px;
   line-height: 18px;
   color: #696984;
-`;
+}
 
-export const CardsContainer = styled.div`
+.CardsContainer{
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
-`;
+}
 
-export const Card = styled.div`
+.Card{
   position: relative;
   width: 350px;
   height: 250px;
@@ -87,4 +87,5 @@ export const Card = styled.div`
       }
     }
   }
+}
 `;

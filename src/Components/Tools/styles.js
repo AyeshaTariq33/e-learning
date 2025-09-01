@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const ToolsSection = styled.section`
     width: 100%;
     padding: 40px;
-`;
 
-export const Container = styled.div`
+    
+.Container{
     width: 100%;
     max-width: 1200px;
     padding: 20px 0;
@@ -14,16 +14,16 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     gap: 145px;
-`;
+}
 
-export const ImageWrapper = styled.div`
+.ImageWrapper{
     flex: 1;
     max-width: 600px;
     height: 500px;
     position: relative;
-`;
+}
 
-export const TextWrapper = styled.div`
+.TextWrapper{
     max-width: 450px;
     position: relative;
 
@@ -52,9 +52,9 @@ export const TextWrapper = styled.div`
         text-align: justify;
         color: #696984;
     }
-`;
+}
 
-export const Background = styled.div`
+.Background{
     position: absolute;
     top: 80px;
     left: 100px;
@@ -66,9 +66,9 @@ export const Background = styled.div`
         max-width: 425px;
         height: auto;
     }
-`;
+}
 
-export const BlueCircle = styled.div`
+.BlueCircle{
     position: absolute;
     bottom: 100px;
     right: 25px;
@@ -79,9 +79,9 @@ export const BlueCircle = styled.div`
         height: auto;
         display: block;
     }
-`;
+}
 
-export const GreenCircle = styled.div`
+.GreenCircle{
     position: absolute;
     top: 20px;
     right: 160px;
@@ -92,9 +92,9 @@ export const GreenCircle = styled.div`
         height: auto;
         display: block;
     }
-`;
+}
 
-export const PeachCircle = styled.div`
+.PeachCircle{
     position: absolute;
     bottom: 160px;
     left: 80px;
@@ -105,9 +105,9 @@ export const PeachCircle = styled.div`
         height: auto;
         display: block;
     }
-`;
+}
 
-export const RedCircle = styled.div`
+.RedCircle{
     position: absolute;
     top: 85px;
     right: 130px;
@@ -118,9 +118,9 @@ export const RedCircle = styled.div`
         height: auto;
         display: block;
     }
-`;
+}
 
-export const User = styled.div`
+.User{
     position: absolute;
     top: 115px;
     right: -40px;
@@ -131,9 +131,9 @@ export const User = styled.div`
         height: auto;
         display: block;
     }
-`;
+}
 
-export const Info = styled.div`
+.Info{
     position: absolute;
     top: 70px;
     left: 95px;
@@ -145,9 +145,9 @@ export const Info = styled.div`
         height: auto;
         display: block;
     }
-`;
+}
 
-export const Hand = styled.div`
+.Hand{
     position: absolute;
     top: 115px;
     right: 137px;
@@ -158,9 +158,9 @@ export const Hand = styled.div`
         height: auto;
         display: block;
     }
-`;
+}
 
-export const Girl = styled.div`
+.Girl{
     position: absolute;
     bottom: 50px;
     right: 65px;
@@ -172,4 +172,5 @@ export const Girl = styled.div`
         object-fit: cover;
         display: block;
     }
+}
 `;

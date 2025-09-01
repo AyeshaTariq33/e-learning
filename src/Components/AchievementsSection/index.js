@@ -1,11 +1,5 @@
 
-import {
-  SuccessSection,
-  Container,
-  SectionHeader,
-  StatsFlex,
-  StatItem
-} from './styles';
+import { SuccessSection} from './styles';
 
 const SuccessComponent = ({ 
   title = "Our Success",
@@ -24,39 +18,39 @@ const SuccessComponent = ({
 
   return (
     <SuccessSection>
-      <Container>
-        <SectionHeader>
+      <div className='container'>
+        <div className="SectionHeader">
           <h2>{title}</h2>
           <p>{description}</p>
-        </SectionHeader>
+        </div>
         
-        <StatsFlex>
-          <StatItem>
+        <div className="StatsFlex">
+          <div className="StatItem">
             <h3>{studentsCount}</h3>
             <p>{studentsLabel}</p>
-          </StatItem>
+          </div>
           
-          <StatItem>
+          <div className="StatItem">
             <h3>{successRate}</h3>
             <p>{successLabel}</p>
-          </StatItem>
+          </div>
           
-          <StatItem>
+          <div className="StatItem">
             <h3>{questionsCount}</h3>
             <p>{questionsLabel}</p>
-          </StatItem>
+          </div>
           
-          <StatItem>
+          <div className="StatItem">
             <h3>{expertsCount}</h3>
             <p>{expertsLabel}</p>
-          </StatItem>
+          </div>
           
-          <StatItem>
+          <div className="StatItem">
             <h3>{yearsCount}</h3>
             <p>{yearsLabel}</p>
-          </StatItem>
-        </StatsFlex>
-      </Container>
+          </div>
+        </div>
+      </div>
     </SuccessSection>
   );
 };

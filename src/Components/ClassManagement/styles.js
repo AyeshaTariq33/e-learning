@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const Section = styled.section`
     width: 100%;
     padding: 40px;
-`;
 
-export const Container = styled.div`
+    .Container{
     width: 100%;
     max-width: 1200px;
     padding: 20px 0;
@@ -13,9 +12,9 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-`;
+}
 
-export const ImageWrapper = styled.div`
+.ImageWrapper{
 
      img {
         object-fit: cover;
@@ -23,9 +22,9 @@ export const ImageWrapper = styled.div`
         max-width: 545px;
         height: auto;
     }
-`;
+}
 
-export const TextWrapper = styled.div`
+.TextWrapper{
     max-width: 450px;
     position: relative;
 
@@ -51,4 +50,6 @@ export const TextWrapper = styled.div`
         text-align: justify;
         color: #696984;
     }
+}
 `;
+

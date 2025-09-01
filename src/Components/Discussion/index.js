@@ -1,12 +1,5 @@
 import image from '../../images/Discussion/image.png';
-import { 
-    Section,
-    Container,
-    ImageWrapper,
-    TextWrapper,
-    Button,
-    Wrapper
-} from './styles';
+import {Section} from './styles';
 
 const Discussion = ({
     title = "One-on-One",
@@ -17,20 +10,20 @@ const Discussion = ({
 
     return (
         <Section>
-        <Container>
-            <Wrapper>
-                <ImageWrapper>
+        <div className="Container">
+            <div className="Wrapper">
+                <div className="ImageWrapper">
                     <img src={image} alt="call" />
-                </ImageWrapper>
-                <TextWrapper>
+                </div>
+                <div className="TextWrapper">
                     <h2>{title} <span>{highlightText}</span></h2>
                     <p>{description}</p>
-                </TextWrapper>
-            </Wrapper>
-            <Button>
+                </div>
+            </div>
+            <div className="Button">
                 <p>{buttonText}</p>
-            </Button>
-        </Container>
+            </div>
+        </div>
     </Section>
     );
 };  

@@ -7,9 +7,8 @@ export const Evaluations = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-`;
 
-export const Container = styled.div`
+.Container{
     padding: 0 20px;
     max-width: 1200px;
     width: 100%;
@@ -18,9 +17,9 @@ export const Container = styled.div`
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-`;
+}
 
-export const Title = styled.div`
+.Title{
   text-align: left;
   margin-bottom: 120px;
   
@@ -46,18 +45,18 @@ export const Title = styled.div`
     letter-spacing: 0;
     word-spacing: 1.5px;
   }
-`;
+}
 
-export const Wrapper = styled.div`
+.Wrapper{
    display: flex;
     justify-content: center;
     align-items: center;
     gap: 175px;
     flex-wrap: wrap;
     position: relative;
-`;
+}
 
-export const Card = styled.div`
+.Card{
     background: #fff;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);    
     border-radius: 10px;
@@ -89,17 +88,17 @@ export const Card = styled.div`
     text-align: left;
     }
     
-`;
-export const Fort = styled.div`
+}
+.Fort{
     
 
     img {
         max-width: 400px;
         border-radius: 20px;
     }
-`;
+}
 
-export const SubmitCard = styled.div`
+.SubmitCard{
     background: white;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -120,18 +119,18 @@ export const SubmitCard = styled.div`
         color: #41BE90;
         font-weight: 600;
     }
-`;
+}
 
-export const Submit = styled.div`
+.Submit{
     border-radius: 50%;
     img {
         max-width: 60px;
         height: auto;
         display: block;
     }
-`;
+}
 
-export const Tick = styled.div`
+.Tick{
     position: absolute;
     top: 16px;
     right: -30px;
@@ -141,9 +140,9 @@ export const Tick = styled.div`
         max-width: 60px;
         border-radius: 100%;
     }
-`;
+}
 
-export const Cross = styled.div`
+.Cross{
     position: absolute;
     top: -15px;
     right: 15px;
@@ -153,9 +152,9 @@ export const Cross = styled.div`
         max-width: 60px;
         border-radius: 100%;
     }
-`;
+}
 
-export const Blue = styled.div`
+.Blue{
     position: absolute;
     top: -20px;
     left: -40px;
@@ -166,9 +165,9 @@ export const Blue = styled.div`
         display: block;
         height: auto;
     }
-`;
+}
 
-export const Green = styled.div`
+.Green{
     position: absolute;
     bottom: 0px;
     left: -10px;
@@ -179,9 +178,9 @@ export const Green = styled.div`
         display: block;
         height: auto;
     }
-`;
+}
 
-export const Orange = styled.div`
+.Orange{
     position: absolute;
     top: -35px;
     left: 55px;
@@ -192,9 +191,9 @@ export const Orange = styled.div`
         display: block;
         height: auto;
     }
-`;
+}
 
-export const Pink = styled.div`
+.Pink{
     position: absolute;
     top: 215px;
     right: -55px;
@@ -205,4 +204,5 @@ export const Pink = styled.div`
         display: block;
         height: auto;
     }
+}
 `;
