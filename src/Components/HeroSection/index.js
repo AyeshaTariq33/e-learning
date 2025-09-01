@@ -6,19 +6,7 @@ import logistics from '../../images/Hero/Logistics.png';
 import classTeacher from '../../images/Hero/class-teacher.png';
 import admissionStatus from '../../images/Hero/Mail.png';
 
-import {
-  HeroContainer,
-  HeroContent,
-  HeroImages,
-  HeroButtonsContainer,
-  JoinForFreeButton,
-  VideoButton,
-  HeroGirl,
-  AssistedStudentsCount,
-  Logistics,
-  ClassSchedule,
-  AdmissionStatus
-} from './styles';
+import {HeroContainer} from './styles';
 
 const HeroSection = ({ 
   title = "Studying", 

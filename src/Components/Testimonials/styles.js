@@ -88,16 +88,22 @@ export const Section = styled.section`
         span {
             color: white;
         }
+        
+        .ArrowIcon {
+            color: white;
+        }
+    }
+    
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
     }
 }
+
 .ArrowIcon{
     color: #49BBBD;
     font-size: 18px;
     transition: color 0.3s ease;
-    
-    ${Button}:hover & {
-        color: white;
-    }
 }
 .ImageWrapper{
     position: absolute;
@@ -174,7 +180,7 @@ export const Section = styled.section`
     color: #49BBBD;
     font-size: 20px;
     transition: all 0.3s ease;
-    padding: 6px 15px;
+    padding: 10px 12px 8px 16px;
     
     &:hover {
         background-color: #49BBBD;

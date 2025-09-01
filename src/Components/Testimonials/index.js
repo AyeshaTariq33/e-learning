@@ -61,12 +61,12 @@ const Testimonial = ({
                     <div className="AssessmentText">
                         {assessmentText}
                     </div>
-                    <div className="Button" onClick={handleWriteAssessment} disabled={isSubmittingAssessment}>
+                    <button className="Button" onClick={handleWriteAssessment} disabled={isSubmittingAssessment}>
                         <span>{isSubmittingAssessment ? 'Submitting...' : buttonText}</span>
                         <div className="ArrowIcon">
                             →
-                        </div>
                     </div>
+</button>
                 </div>
                 
                 <div className="RightContent">
@@ -95,9 +95,9 @@ const Testimonial = ({
                             </div>
                         </div>
                     </div>
-                    <div className="NavigationButton" onClick={handleNavigation}>
+                    <button className="NavigationButton" onClick={handleNavigation}>
                         ▷
-                    </div>
+                    </button>
                 </div>
             </div>
         </Section>

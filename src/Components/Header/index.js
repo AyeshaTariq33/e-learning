@@ -19,7 +19,7 @@ const Header = ({
 
   return (
     <NavContainer>
-        <div className="Logo" src={logoImage} alt="TOTC Logo" />
+        <img className="Logo" src={logoImage} alt="TOTC Logo" />
           <div className="NavMenu">
               <div className="NavItem">
                 <a href={homeHref}>{homeText}</a>

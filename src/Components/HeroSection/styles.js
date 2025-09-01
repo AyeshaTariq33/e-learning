@@ -36,7 +36,7 @@ export const HeroContainer = styled.div`
     }
 }
 
-HeroButtonsContainer{
+.HeroButtonsContainer{
     display: flex;
     gap: 20px;
     align-items: center;

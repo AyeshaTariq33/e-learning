@@ -28,7 +28,7 @@ const Footer = ({
     <FooterSection>
       <div className="Container">
         <div className="LogoSection">
-          <div className="Logo" src={logo} alt="TOTC Logo" />
+          <img className="Logo" src={logo} alt="TOTC Logo" />
           <div className="LogoText">
             <span>{logoText1}</span>
             <span>{logoText2}</span>
