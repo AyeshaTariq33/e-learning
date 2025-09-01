@@ -23,7 +23,6 @@ export const SuccessSection = styled.section`
   
   p {
     font-size: 14px;
-    color: #252525e3;
     line-height: 20px;
     max-width: 600px;
     margin: 0 auto;
@@ -53,7 +52,6 @@ export const SuccessSection = styled.section`
   
   p {
     font-size: 18px;
-    color: #333;
     font-weight: 500;
     margin: 0;
     line-height: 1.4;

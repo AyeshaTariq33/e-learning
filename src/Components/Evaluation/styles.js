@@ -38,7 +38,6 @@ export const Evaluations = styled.div`
   
   p {
     font-size: 15px;
-    color: #696984;
     max-width: 400px;
     margin: 0 auto;
     line-height: 24px;
@@ -69,7 +68,6 @@ export const Evaluations = styled.div`
     margin-bottom: 50px;
     p {
         font-size: 12px;
-        color: #717FB0;
         margin-bottom: 10px;
         font-weight: 500;
         max-width: max-content;

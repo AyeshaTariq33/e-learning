@@ -155,7 +155,6 @@ export const HeroContainer = styled.div`
         p {
             margin: 0;
             font-size: 12px;
-            color: #666;
         }
     }
 }
@@ -208,7 +207,6 @@ export const HeroContainer = styled.div`
         
         p {
             font-size: 12px;
-            color: #666;
         }
     }
     
@@ -265,7 +263,6 @@ export const HeroContainer = styled.div`
         
         p {
             font-size: 12px;
-            color: #666;
         }
     }
 }

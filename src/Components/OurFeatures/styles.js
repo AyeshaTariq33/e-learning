@@ -36,7 +36,6 @@ export const OurFeaturesSection = styled.section`
   
   p {
     font-size: 16px;
-    color: #696984;
     max-width: 600px;
     margin: 0 auto;
     line-height: 20px;
@@ -185,7 +184,6 @@ export const OurFeaturesSection = styled.section`
   
   p {
     font-size: 14px;
-    color: #4a5568;
     line-height: 24px;
     margin: 0;
   }
@@ -207,7 +205,6 @@ export const OurFeaturesSection = styled.section`
   
   p {
     font-size: 14px;
-    color: #4a5568;
     line-height: 24px;
     margin: 0;
   }
@@ -228,7 +225,6 @@ export const OurFeaturesSection = styled.section`
   
   p {
     font-size: 14px;
-    color: #696984;
     line-height: 24px;
     margin: 0;
   }

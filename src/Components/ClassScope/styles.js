@@ -41,7 +41,6 @@ export const ClassScopeSection = styled.section`
   p {
     font-size: 15px;
     line-height: 22px;
-    color: #696984;
     margin-bottom: 20px;
     max-width: 500px;
     word-spacing: 1.5px;

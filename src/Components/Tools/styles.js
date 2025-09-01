@@ -50,7 +50,6 @@ export const ToolsSection = styled.section`
         letter-spacing: 0.5px;
         word-spacing: 1px;
         text-align: justify;
-        color: #696984;
     }
 }
 
