@@ -39,25 +39,25 @@ const Footer = ({
           <div className="NewsletterTitle">
             {newsletterTitle}
           </div>
-          <div className="EmailForm" onSubmit={handleSubmit}>
-            <div className="EmailInput"
+          <form className="EmailForm" onSubmit={handleSubmit}>
+            <input className="EmailInput"
               type="email"
               placeholder={emailPlaceholder}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <div className="SubscribeButton" type="submit">
+            <button className="SubscribeButton" type="submit">
               {subscribeButtonText}
-            </div>
-          </div>
+            </button>
+          </form>
         </div>
 
         <div className="LinksSection">
-          <div className="FooterLinkss">
-            <div className="FooterLink" href={link1Href}>{link1Text}</div>
-            <div className="FooterLink" href={link2Href}>{link2Text}</div>
-            <div className="FooterLink" href={link3Href}>{link3Text}</div>
+          <div className="FooterLinks">
+            <a className="FooterLink" href={link1Href}>{link1Text}</a>
+            <a className="FooterLink" href={link2Href}>{link2Text}</a>
+            <a className="FooterLink" href={link3Href}>{link3Text}</a>
           </div>
         </div>
 

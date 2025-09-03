@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Section = styled.section`
     margin-bottom: 60px;
-    padding: 40px;
+    padding: 0;
 
 .Container{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;

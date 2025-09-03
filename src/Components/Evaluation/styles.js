@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Evaluations = styled.div`
     width: 100%;
-    padding:  40px 40px 40px 50px;
+    padding:  0 0 0 50px;
     display: flex;
     justify-content: center;
     align-items: center;

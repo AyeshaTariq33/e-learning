@@ -10,8 +10,11 @@ import Tools from './Components/Tools';
 import Evaluation from './Components/Evaluation';
 import ClassManagement from './Components/ClassManagement';
 import Discussion from './Components/Discussion';
+import Explore from './Components/Explore';
 import Testimonial from './Components/Testimonials';
+import News from './Components/News';
 import Footer from './Components/Footer';
+
  
 
 function App() {
@@ -28,7 +31,9 @@ function App() {
         <Evaluation />
         <ClassManagement />
         <Discussion />
+        <Explore />
         <Testimonial />
+        <News />
         <Footer />
     </div>
   );

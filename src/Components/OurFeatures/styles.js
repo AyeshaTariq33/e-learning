@@ -4,7 +4,7 @@ export const OurFeaturesSection = styled.section`
   display: flex;
   align-items: center;
   margin-bottom: 80px;
-  padding: 40px;
+  padding: 0;
 
   
 .Container{

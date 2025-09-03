@@ -4,7 +4,7 @@ export const ClassScopeSection = styled.section`
     margin-bottom: 80px;
     overflow: hidden;
     position: relative;
-    padding: 40px;
+    padding: 0;
 
     .ScopeContent{
   max-width: 1200px;

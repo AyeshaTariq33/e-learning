@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const FooterSection = styled.footer`
   background-color: #252641;
   color: #ffffff;
-  padding: 30px 40px;
+  padding: 30px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,7 +109,7 @@ export const FooterSection = styled.footer`
 
 .FooterLinks{
   display: flex;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
 }
 
